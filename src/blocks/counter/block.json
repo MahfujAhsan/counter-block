@@ -1,0 +1,72 @@
+{
+	"apiVersion": 2,
+	"name": "ctrb/counter",
+	"version": "0.1.0",
+	"title": "Counter",
+	"category": "ctr-block",
+	"description": "A simple counter block.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"uniqueId": {
+			"type": "string"
+		},
+		"counters": {
+			"type": "array",
+			"default": [
+				{
+					"background": { "color": "#333" },
+					"icon": { "class": "fa fa-facebook", "color": "#333" },
+					"prefix": "",
+					"number": 100,
+					"suffix": "+",
+					"numberColor": "#000000",
+					"title": "Counter 1",
+					"titleColor": "#333"
+				}
+			]
+		},
+		"background": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"border": {
+			"type": "object",
+			"default": {}
+		},
+		"iconSizes": {
+			"type": "object",
+			"default": {
+				"desktop": 20,
+				"tablet": 20,
+				"mobile": 15
+			}
+		},
+		"numberTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 20,
+					"tablet": 20,
+					"mobile": 15
+				}
+			}
+		},
+		"titleTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 20,
+					"tablet": 20,
+					"mobile": 15
+				}
+			}
+		}
+	},
+	"textdomain": "counter-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
